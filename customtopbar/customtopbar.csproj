@@ -13,6 +13,7 @@
   <Authors>adem öcel</Authors>
   <Description>Aren't you tired of manually changing your boring top panel?</Description>
   <PackageTags>WinForms; .NET;topbar</PackageTags>
+  
 </PropertyGroup>
 
 </Project>
