@@ -1,8 +1,11 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
-
+/// <summary>
+/// nothing speacial is maded inside of source code just rebranding and better Expection message (I personaly consider to make something more affecting in soon)
+/// thats more like making the formatting way much cleaner and getting rid of "{" hell
+/// </summary>
 namespace customform
 {
     public partial class Topbar : UserControl
@@ -34,7 +37,7 @@ namespace customform
                 }
             }
         }
-        private void Customtopbar_Load(object sender, EventArgs e)
+        private void libctm_Load(object sender, EventArgs e)
         {
             this.SendToBack();
             parent.FormBorderStyle = FormBorderStyle.None;
@@ -77,13 +80,13 @@ namespace customform
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
-        private void Customtopbar_MouseDown(object sender, MouseEventArgs e)
+        private void libctm_MouseDown(object sender, MouseEventArgs e)
         {
             dragging = true;
             dragCursorPoint = Cursor.Position;
             dragFormPoint = parent.Location;
         }
-        private void Customtopbar_MouseMove(object sender, MouseEventArgs e)
+        private void libctm_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
             {
@@ -91,7 +94,7 @@ namespace customform
                 parent.Location = Point.Add(dragFormPoint, new Size(dif));
             }
         }
-        private void Customtopbar_MouseUp(object sender, MouseEventArgs e)
+        private void libctm_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
         }
@@ -141,11 +144,11 @@ namespace customform
         {
             if (this.Parent is null)
             {
-                throw new Exception("parent is null");
+                throw new Exception("Parent is null.");
             }
             else if (this.Parent is not Form)
             {
-                throw new Exception("CustomTopBar can only be added to Form objects.");
+                throw new Exception("Failed to find Form! LibCTM can't work as standalone project.");
             }
             parent = (Form)this.Parent;
 
@@ -165,7 +168,7 @@ namespace customform
             title.BackColor = BackColor;
         }
 
-        private void İcon_BackgroundImageChanged(object sender, EventArgs e)
+        private void Icon_BackgroundImageChanged(object sender, EventArgs e)
         {
             icon.Visible = icon.BackgroundImage != null;
         }
