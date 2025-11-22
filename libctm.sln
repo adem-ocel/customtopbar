@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customtopbar", "customtopbar\customtopbar.csproj", "{4415EC74-3711-414C-9A9E-42B45871F369}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libctm", "libctm\libctm.csproj", "{4415EC74-3711-414C-9A9E-42B45871F369}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
