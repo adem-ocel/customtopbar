@@ -85,9 +85,9 @@ namespace customform
             panel2.Name = "panel2";
             panel2.Size = new Size(1009, 35);
             panel2.TabIndex = 9;
-            panel2.MouseDown += Customtopbar_MouseDown;
-            panel2.MouseMove += Customtopbar_MouseMove;
-            panel2.MouseUp += Customtopbar_MouseUp;
+            panel2.MouseDown += libctm_MouseDown;
+            panel2.MouseMove += libctm_MouseMove;
+            panel2.MouseUp += libctm_MouseUp;
             // 
             // windowstatemaxbutton
             // 
@@ -115,7 +115,7 @@ namespace customform
             icon.TabIndex = 10;
             icon.TabStop = false;
             icon.Visible = false;
-            icon.BackgroundImageChanged += İcon_BackgroundImageChanged;
+            icon.BackgroundImageChanged += this.Icon_BackgroundImageChanged;
             // 
             // titlepanel
             // 
@@ -152,11 +152,11 @@ namespace customform
             Margin = new Padding(3, 4, 3, 4);
             Name = "Topbar";
             Size = new Size(1102, 35);
-            Load += Customtopbar_Load;
+            Load += libctm_Load;
             BackColorChanged += Topbar_BackColorChanged;
-            MouseDown += Customtopbar_MouseDown;
-            MouseMove += Customtopbar_MouseMove;
-            MouseUp += Customtopbar_MouseUp;
+            MouseDown += libctm_MouseDown;
+            MouseMove += libctm_MouseMove;
+            MouseUp += libctm_MouseUp;
             ParentChanged += Topbar_ParentChanged;
             ((System.ComponentModel.ISupportInitialize)icon).EndInit();
             titlepanel.ResumeLayout(false);
