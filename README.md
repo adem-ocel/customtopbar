@@ -1,4 +1,4 @@
-# customtopbar
+# LibCTM a' prefabricated topbar library
 A' library to remove existing Windows topbar and making your own
 because of simple nature would not conflict with anything and allow you to use all power of your existing workload
 
