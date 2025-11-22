@@ -29,5 +29,9 @@
     <LastGenOutput>Resources.Designer.cs</LastGenOutput>
   </EmbeddedResource>
 </ItemGroup>
-
+	
+<PropertyGroup>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+</PropertyGroup>
+	
 </Project>
