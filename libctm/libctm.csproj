@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+</PropertyGroup>
+
+<PropertyGroup>
+    <PackageId>LibCTM</PackageId>
+    <Version>1.1</Version>
+    <Authors>adem-ocel</Authors>
+    <Description>A robust top bar library for basic necessities removes the standard Windows topbar and allows you to create a custom top bar with images, etc.</Description>
+    <PackageTags>WinForms; .NET;topbar</PackageTags>
+</PropertyGroup>
+
+</Project>
