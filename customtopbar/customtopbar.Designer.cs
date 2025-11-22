@@ -33,7 +33,6 @@ namespace customform
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topbar));
             windowstatusminbutton = new Button();
             closebutton = new Button();
             panel2 = new Panel();
@@ -48,8 +47,6 @@ namespace customform
             // windowstatusminbutton
             // 
             windowstatusminbutton.BackColor = SystemColors.Window;
-            windowstatusminbutton.BackgroundImage = (Image)resources.GetObject("windowstatusminbutton.BackgroundImage");
-            windowstatusminbutton.BackgroundImageLayout = ImageLayout.Stretch;
             windowstatusminbutton.Dock = DockStyle.Right;
             windowstatusminbutton.FlatAppearance.BorderSize = 0;
             windowstatusminbutton.FlatStyle = FlatStyle.Flat;
@@ -59,14 +56,13 @@ namespace customform
             windowstatusminbutton.Name = "windowstatusminbutton";
             windowstatusminbutton.Size = new Size(31, 35);
             windowstatusminbutton.TabIndex = 5;
+            windowstatusminbutton.Text = "-";
             windowstatusminbutton.UseVisualStyleBackColor = false;
             windowstatusminbutton.Click += Windowstatusminbutton_Click;
             // 
             // closebutton
             // 
             closebutton.BackColor = SystemColors.Window;
-            closebutton.BackgroundImage = (Image)resources.GetObject("closebutton.BackgroundImage");
-            closebutton.BackgroundImageLayout = ImageLayout.Stretch;
             closebutton.Dock = DockStyle.Right;
             closebutton.FlatAppearance.BorderSize = 0;
             closebutton.FlatStyle = FlatStyle.Flat;
@@ -76,6 +72,7 @@ namespace customform
             closebutton.Name = "closebutton";
             closebutton.Size = new Size(31, 35);
             closebutton.TabIndex = 3;
+            closebutton.Text = "X";
             closebutton.UseVisualStyleBackColor = false;
             closebutton.Click += Closebutton_Click;
             // 
@@ -95,8 +92,6 @@ namespace customform
             // windowstatemaxbutton
             // 
             windowstatemaxbutton.BackColor = SystemColors.Window;
-            windowstatemaxbutton.BackgroundImage = (Image)resources.GetObject("windowstatemaxbutton.BackgroundImage");
-            windowstatemaxbutton.BackgroundImageLayout = ImageLayout.Zoom;
             windowstatemaxbutton.Dock = DockStyle.Right;
             windowstatemaxbutton.FlatAppearance.BorderSize = 0;
             windowstatemaxbutton.FlatStyle = FlatStyle.Flat;
