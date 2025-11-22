@@ -1,33 +1,49 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-</PropertyGroup>
+	<PropertyGroup>
+		    <TargetFramework>net9.0-windows</TargetFramework>
+		    <Nullable>enable</Nullable>
+		    <UseWindowsForms>true</UseWindowsForms>
+		    <ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-<PropertyGroup>
-    <PackageId>LibCTM</PackageId>
-    <Version>1.1</Version>
-    <Authors>adem-ocel</Authors>
-    <Description>A robust top bar library for basic necessities removes the standard Windows topbar and allows you to create a custom top bar with images, etc.</Description>
-    <PackageTags>WinForms; .NET;topbar</PackageTags>
-</PropertyGroup>
+	<PropertyGroup>
+		    <PackageId>LibCTM</PackageId>
+		    <Version>1.1</Version>
+		    <Authors>adem-ocel</Authors>
+		    <Description>A robust top bar library for basic necessities removes the standard Windows topbar and allows you to create a custom top bar with images, etc.</Description>
+		    <PackageTags>WinForms; .NET;topbar</PackageTags>
+	</PropertyGroup>
 
-<ItemGroup>
-  <Compile Update="Properties\Resources.Designer.cs">
-    <DesignTime>True</DesignTime>
-    <AutoGen>True</AutoGen>
-    <DependentUpon>Resources.resx</DependentUpon>
-  </Compile>
-</ItemGroup>
+	<ItemGroup>
+		  <Compile Update="Properties\Resources.Designer.cs">
+			    <DesignTime>True</DesignTime>
+			    <AutoGen>True</AutoGen>
+			    <DependentUpon>Resources.resx</DependentUpon>
+			 
+		</Compile>
+	</ItemGroup>
 
-<ItemGroup>
-  <EmbeddedResource Update="Properties\Resources.resx">
-    <Generator>ResXFileCodeGenerator</Generator>
-    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-  </EmbeddedResource>
-</ItemGroup>
-	
+	<ItemGroup>
+		  <EmbeddedResource Update="Properties\Resources.resx">
+			    <Generator>ResXFileCodeGenerator</Generator>
+			    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+			 
+		</EmbeddedResource>
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt"  Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 </Project>
